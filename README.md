@@ -146,11 +146,3 @@ ist auf zufällig gezogene Werte nicht anwendbar, deshalb bleibt der Speicher di
 harte Grenze.
 
 ---
-
-## Hinweis zu `uuid.py`
-
-Eine Datei namens `uuid.py` überschattet das gleichnamige Standardmodul. Ein
-`import uuid` aus diesem Ordner importiert die Datei selbst, und `uuid.uuid4()`
-scheitert dann mit `AttributeError`. Für eigene Experimente umbenennen, z. B. in
-`mein_uuid.py`. `uuid_check.py` umgeht das, indem es sein eigenes Verzeichnis
-aus `sys.path` entfernt.
